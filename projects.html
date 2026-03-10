@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Nick Cyber Profile</title>
+    <title>Projects | Nick 个人主页</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body class="page-projects">
@@ -19,121 +19,190 @@
       <div class="shell">
         <section class="card">
           <header class="nav">
-            <a class="brand" href="index.html">Neon Identity / 2026</a>
+            <a class="brand" href="index.html">Nick / Personal Signal · 2026</a>
             <nav class="nav-links">
               <a href="index.html" data-nav>Home</a>
-              <a href="about.html" data-nav>About</a>
-              <a href="projects.html" data-nav>Projects</a>
-              <a href="services.html" data-nav>Services</a>
-              <a href="contact.html" data-nav>Contact</a>
+              <a href="about.html" data-nav>Archive</a>
+              <a href="projects.html" data-nav>Work</a>
+              <a href="services.html" data-nav>Build</a>
+              <a href="contact.html" data-nav>Channel</a>
+              <a href="twin.html" data-nav>Twin</a>
             </nav>
           </header>
 
           <section class="page-hero">
-            <div class="eyebrow">Project Matrix</div>
+            <div class="eyebrow">Work</div>
             <h1 class="page-title">
-              <span class="glitch" data-text="PROJECTS">PROJECTS</span>
+              <span class="glitch" data-text="WORK">WORK</span>
             </h1>
             <p class="lead">
-              这里不是普通九宫格，而是按展示场景拆分的作品矩阵。你可以直接按类型切换查看不同页面方向。
+              用更少的文字讲清楚：做了什么、为什么这么做、效果如何。
             </p>
           </section>
 
           <section class="section-block">
-            <div class="filter-row">
-              <button class="filter-button active" data-filter="all" type="button">全部</button>
-              <button class="filter-button" data-filter="landing" type="button">Landing</button>
-              <button class="filter-button" data-filter="brand" type="button">Brand</button>
-              <button class="filter-button" data-filter="interactive" type="button">Interactive</button>
+            <div class="projects-controls">
+              <div class="filter-row">
+                <button class="filter-button active" data-filter="all" type="button">全部</button>
+                <button class="filter-button" data-filter="landing" type="button">Landing</button>
+                <button class="filter-button" data-filter="brand" type="button">Brand</button>
+                <button class="filter-button" data-filter="interactive" type="button">Interactive</button>
+              </div>
+              <div class="search-row">
+                <input class="search-input" type="search" placeholder="搜索项目（标题/描述）" data-project-search>
+                <span class="search-count" data-project-count>6</span>
+                <button class="filter-button" type="button" data-project-random>随机聚焦</button>
+              </div>
+              <div class="hint-row">Tip: 用键盘方向键移动焦点，回车打开预览。</div>
             </div>
           </section>
 
           <section class="section-block">
             <div class="projects-layout">
               <div class="projects-grid">
-              <article class="project-card" data-project-card data-category="landing" data-preview-type="Landing" data-preview-title="NEON PROFILE" data-preview-description="以赛博朋克个人名片为核心，强化首屏故障字效和氛围背景，用于个人展示与视觉引流。" data-preview-vibe="93" data-preview-motion="84" data-preview-impact="95">
-                <div>
-                  <span class="section-title">Landing</span>
-                  <strong>Neon Profile Launch</strong>
-                  <p class="project-copy">
-                    以赛博朋克个人名片为核心，强化首屏故障字效和氛围背景，用于个人展示与视觉引流。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>HTML / CSS / JS</span>
-                  <span>High Impact</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="landing"
+                  data-preview-type="Landing"
+                  data-preview-title="NEON PROFILE"
+                  data-preview-description="以个人主页为核心，强调第一屏字效与背景氛围，同时保证可读性与移动端节奏。"
+                  data-preview-vibe="93"
+                  data-preview-motion="84"
+                  data-preview-impact="95"
+                >
+                  <div>
+                    <span class="section-title">Landing</span>
+                    <strong>Neon Profile Launch</strong>
+                    <p class="project-copy">
+                      以个人主页为核心，强调第一屏字效与背景氛围，同时保证可读性与移动端节奏。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>HTML / CSS / JS</span>
+                    <span>High Impact</span>
+                  </div>
+                </article>
 
-              <article class="project-card" data-project-card data-category="brand" data-preview-type="Brand" data-preview-title="FUTURE LABEL" data-preview-description="面向潮流品牌的展示页，强调霓虹标签、沉浸式色彩和更像海报的版式节奏。" data-preview-vibe="88" data-preview-motion="76" data-preview-impact="86">
-                <div>
-                  <span class="section-title">Brand</span>
-                  <strong>Future Label Showcase</strong>
-                  <p class="project-copy">
-                    面向潮流品牌的展示页，强调霓虹标签、沉浸式色彩和更像海报的版式节奏。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>Visual Direction</span>
-                  <span>Campaign Page</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="brand"
+                  data-preview-type="Brand"
+                  data-preview-title="FUTURE LABEL"
+                  data-preview-description="面向潮流品牌的展示页，强调标签系统、版式节奏与更“像海报”的画面张力。"
+                  data-preview-vibe="88"
+                  data-preview-motion="76"
+                  data-preview-impact="86"
+                >
+                  <div>
+                    <span class="section-title">Brand</span>
+                    <strong>Future Label Showcase</strong>
+                    <p class="project-copy">
+                      面向潮流品牌的展示页，强调标签系统、版式节奏与更像海报的画面张力。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>Visual Direction</span>
+                    <span>Campaign Page</span>
+                  </div>
+                </article>
 
-              <article class="project-card" data-project-card data-category="interactive" data-preview-type="Interactive" data-preview-title="SIGNAL DASH" data-preview-description="把数据面板做成未来系统界面，适合创作者主页、活动页或实验性内容包装。" data-preview-vibe="82" data-preview-motion="92" data-preview-impact="80">
-                <div>
-                  <span class="section-title">Interactive</span>
-                  <strong>Signal Dashboard</strong>
-                  <p class="project-copy">
-                    把数据面板做成未来系统界面，适合创作者主页、活动页或实验性内容包装。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>Motion UI</span>
-                  <span>System Style</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="interactive"
+                  data-preview-type="Interactive"
+                  data-preview-title="SIGNAL DASH"
+                  data-preview-description="把信息面板做成系统界面：筛选、预览与状态反馈更明确，适合作品集或实验页。"
+                  data-preview-vibe="82"
+                  data-preview-motion="92"
+                  data-preview-impact="80"
+                >
+                  <div>
+                    <span class="section-title">Interactive</span>
+                    <strong>Signal Dashboard</strong>
+                    <p class="project-copy">
+                      把信息面板做成系统界面：筛选、预览与状态反馈更明确，适合作品集或实验页。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>Motion UI</span>
+                    <span>System Style</span>
+                  </div>
+                </article>
 
-              <article class="project-card" data-project-card data-category="landing" data-preview-type="Landing" data-preview-title="VIDEO PROMO" data-preview-description="用类似短视频封面的冲击感组织网页信息，适合活动宣传、单品推荐和热点包装。" data-preview-vibe="96" data-preview-motion="78" data-preview-impact="90">
-                <div>
-                  <span class="section-title">Landing</span>
-                  <strong>Short Video Promo Page</strong>
-                  <p class="project-copy">
-                    用类似短视频封面的冲击感组织网页信息，适合活动宣传、单品推荐和热点包装。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>Trend Driven</span>
-                  <span>Promo Site</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="landing"
+                  data-preview-type="Landing"
+                  data-preview-title="VIDEO PROMO"
+                  data-preview-description="用短视频封面的冲击感组织信息层级，更适合活动宣传、单品推荐与热点包装。"
+                  data-preview-vibe="96"
+                  data-preview-motion="78"
+                  data-preview-impact="90"
+                >
+                  <div>
+                    <span class="section-title">Landing</span>
+                    <strong>Short Video Promo Page</strong>
+                    <p class="project-copy">
+                      用短视频封面的冲击感组织信息层级，更适合活动宣传、单品推荐与热点包装。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>Trend Driven</span>
+                    <span>Promo Site</span>
+                  </div>
+                </article>
 
-              <article class="project-card" data-project-card data-category="brand" data-preview-type="Brand" data-preview-title="CREATOR ID" data-preview-description="围绕个人 IP 的主视觉站点，让主页、介绍页和联系方式保持一致的品牌识别。" data-preview-vibe="84" data-preview-motion="72" data-preview-impact="87">
-                <div>
-                  <span class="section-title">Brand</span>
-                  <strong>Creator Identity System</strong>
-                  <p class="project-copy">
-                    围绕个人 IP 的主视觉站点，让主页、介绍页和联系方式保持一致的品牌识别。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>Identity</span>
-                  <span>Multi Page</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="brand"
+                  data-preview-type="Brand"
+                  data-preview-title="CREATOR ID"
+                  data-preview-description="围绕个人 IP 的多页站点：主页、介绍页与联系模块保持一致的品牌识别与叙事节奏。"
+                  data-preview-vibe="84"
+                  data-preview-motion="72"
+                  data-preview-impact="87"
+                >
+                  <div>
+                    <span class="section-title">Brand</span>
+                    <strong>Creator Identity System</strong>
+                    <p class="project-copy">
+                      围绕个人 IP 的多页站点：主页、介绍页与联系模块保持一致的品牌识别与叙事节奏。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>Identity</span>
+                    <span>Multi Page</span>
+                  </div>
+                </article>
 
-              <article class="project-card" data-project-card data-category="interactive" data-preview-type="Interactive" data-preview-title="MOTION WALL" data-preview-description="为作品集打造可切换的视觉墙布局，强化浏览节奏和悬停反馈，提高停留时长。" data-preview-vibe="79" data-preview-motion="90" data-preview-impact="82">
-                <div>
-                  <span class="section-title">Interactive</span>
-                  <strong>Motion Gallery Wall</strong>
-                  <p class="project-copy">
-                    为作品集打造可切换的视觉墙布局，强化浏览节奏和悬停反馈，提高停留时长。
-                  </p>
-                </div>
-                <div class="project-meta">
-                  <span>Showcase</span>
-                  <span>Grid Motion</span>
-                </div>
-              </article>
+                <article
+                  class="project-card"
+                  data-project-card
+                  data-category="interactive"
+                  data-preview-type="Interactive"
+                  data-preview-title="MOTION WALL"
+                  data-preview-description="为作品集打造可切换的视觉墙：更强的浏览节奏与停留反馈，提升探索感。"
+                  data-preview-vibe="79"
+                  data-preview-motion="90"
+                  data-preview-impact="82"
+                >
+                  <div>
+                    <span class="section-title">Interactive</span>
+                    <strong>Motion Gallery Wall</strong>
+                    <p class="project-copy">
+                      为作品集打造可切换的视觉墙：更强的浏览节奏与停留反馈，提升探索感。
+                    </p>
+                  </div>
+                  <div class="project-meta">
+                    <span>Showcase</span>
+                    <span>Grid Motion</span>
+                  </div>
+                </article>
               </div>
 
               <aside class="preview-stage">
@@ -142,7 +211,7 @@
                   <div>
                     <h2 class="preview-title" data-preview-title>NEON PROFILE</h2>
                     <p class="preview-description" data-preview-description>
-                      以赛博朋克个人名片为核心，强化首屏故障字效和氛围背景，用于个人展示与视觉引流。
+                      以个人主页为核心，强调第一屏字效与背景氛围，同时保证可读性与移动端节奏。
                     </p>
                   </div>
                   <div class="preview-meter">

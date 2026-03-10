@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin | Nick 个人主页</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body class="page-twin">
+    <div class="orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="grid"></div>
+    <div class="particles" id="particles"></div>
+
+    <main class="scene">
+      <div class="shell">
+        <section class="card">
+          <header class="nav">
+            <a class="brand" href="index.html">Nick / Personal Signal · 2026</a>
+            <nav class="nav-links">
+              <a href="index.html" data-nav>Home</a>
+              <a href="about.html" data-nav>Archive</a>
+              <a href="projects.html" data-nav>Work</a>
+              <a href="services.html" data-nav>Build</a>
+              <a href="contact.html" data-nav>Channel</a>
+              <a href="twin.html" data-nav>Twin</a>
+            </nav>
+          </header>
+
+          <section class="page-hero">
+            <div class="eyebrow">Twin Interface</div>
+            <h1 class="page-title">
+              <span class="glitch" data-text="TWIN">TWIN</span>
+            </h1>
+            <p class="lead">
+              这是一个“AI 分身”演示：用于模拟沟通与快速问答。不会发送到服务器，记录只保存在你的浏览器本地。
+            </p>
+          </section>
+
+          <section class="section-block">
+            <div class="twin-layout" data-twin>
+              <article class="panel twin-chat">
+                <div class="twin-chat-head">
+                  <div class="twin-id">
+                    <div class="twin-dot"></div>
+                    <div>
+                      <div class="twin-name">Nick Twin</div>
+                      <div class="twin-sub">demo mode · offline brain</div>
+                    </div>
+                  </div>
+                  <div class="twin-actions">
+                    <button class="tag" type="button" data-twin-export>导出</button>
+                    <button class="tag" type="button" data-twin-clear>清空</button>
+                  </div>
+                </div>
+
+                <div class="twin-log" data-twin-log aria-live="polite" aria-label="Chat log"></div>
+
+                <div class="twin-suggestions" aria-label="Suggestions">
+                  <button class="tag" type="button" data-twin-suggest="你最擅长做什么类型的页面？">你擅长什么</button>
+                  <button class="tag" type="button" data-twin-suggest="我想做一个个人主页，给我 3 个方向建议。">主页建议</button>
+                  <button class="tag" type="button" data-twin-suggest="给我一个合作流程的简版。">合作流程</button>
+                  <button class="tag" type="button" data-twin-suggest="你能把我的需求整理成一句话 brief 吗？">一句话 brief</button>
+                </div>
+
+                <form class="twin-input" data-twin-form>
+                  <input class="twin-text" type="text" autocomplete="off" placeholder="对我的 AI 分身说点什么…" data-twin-input>
+                  <button class="button primary" type="submit" data-magnetic>发送</button>
+                </form>
+              </article>
+
+              <aside class="panel twin-side">
+                <span class="section-title">Quick Controls</span>
+                <div class="twin-side-grid">
+                  <div class="twin-card">
+                    <strong>语气</strong>
+                    <div class="estimate-pills">
+                      <button class="tag active" type="button" data-twin-tone="sharp">干脆</button>
+                      <button class="tag" type="button" data-twin-tone="warm">友好</button>
+                      <button class="tag" type="button" data-twin-tone="nerd">技术</button>
+                    </div>
+                  </div>
+                  <div class="twin-card">
+                    <strong>记忆</strong>
+                    <p class="body-text">会记住最近 20 条对话（本地）。你也可以随时清空。</p>
+                  </div>
+                  <div class="twin-card">
+                    <strong>提示</strong>
+                    <p class="body-text">按 <span class="kbd">Ctrl</span> + <span class="kbd">K</span> 打开命令面板。</p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <p class="footer">TWIN CHANNEL // LOCAL DEMO</p>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/main.js"></script>
+  </body>
+</html>
+

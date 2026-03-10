@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Nick Cyber Profile</title>
+    <title>Contact | Nick 个人主页</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body class="page-contact">
@@ -19,23 +19,24 @@
       <div class="shell">
         <section class="card">
           <header class="nav">
-            <a class="brand" href="index.html">Neon Identity / 2026</a>
+            <a class="brand" href="index.html">Nick / Personal Signal · 2026</a>
             <nav class="nav-links">
               <a href="index.html" data-nav>Home</a>
-              <a href="about.html" data-nav>About</a>
-              <a href="projects.html" data-nav>Projects</a>
-              <a href="services.html" data-nav>Services</a>
-              <a href="contact.html" data-nav>Contact</a>
+              <a href="about.html" data-nav>Archive</a>
+              <a href="projects.html" data-nav>Work</a>
+              <a href="services.html" data-nav>Build</a>
+              <a href="contact.html" data-nav>Channel</a>
+              <a href="twin.html" data-nav>Twin</a>
             </nav>
           </header>
 
           <section class="page-hero">
-            <div class="eyebrow">Open Channel</div>
+            <div class="eyebrow">Channel</div>
             <h1 class="page-title">
-              <span class="glitch" data-text="CONTACT">CONTACT</span>
+              <span class="glitch" data-text="CHANNEL">CHANNEL</span>
             </h1>
             <p class="lead">
-              如果你想把主页、作品页或品牌落地页做得更抓眼，可以直接发需求。下面这页已经预留了完整联系模块。
+              直接说需求，不用写长文。我更关心目标、参考与上线时间。
             </p>
           </section>
 
@@ -43,6 +44,10 @@
             <div class="contact-grid">
               <article class="form-panel">
                 <span class="section-title">Send Message</span>
+                <div class="signal-meter" aria-label="Signal strength">
+                  <div class="signal-meter-bar" data-signal-meter-bar style="width: 0%;"></div>
+                </div>
+                <div class="signal-meter-label" data-signal-meter-label>信号强度：0%</div>
                 <form data-contact-form>
                   <div class="field">
                     <label for="name">你的名字</label>
@@ -66,15 +71,27 @@
                     <textarea
                       id="message"
                       name="message"
-                      placeholder="说一下你想做什么页面、希望偏什么风格、预计上线时间。"
+                      placeholder="说一下你想做什么页面、希望偏什么风格、预计上线时间（越具体越好）"
                     ></textarea>
                   </div>
                   <div class="quick-actions">
-                    <button class="tag quick-button" data-fill-message="我想做一个更酷的个人主页，重点是首屏冲击力。" type="button">填入主页需求</button>
-                    <button class="tag quick-button" data-fill-message="我需要一个品牌活动页，偏年轻、潮流、适合移动端传播。" type="button">填入活动需求</button>
-                    <button class="tag quick-button" data-fill-message="我有一批项目，想做成可筛选的作品展示网站。" type="button">填入作品集需求</button>
+                    <button
+                      class="tag quick-button"
+                      data-fill-message="我想做一个更酷的个人主页，重点是第一屏冲击力与动效节奏。"
+                      type="button"
+                    >填入主页需求</button>
+                    <button
+                      class="tag quick-button"
+                      data-fill-message="我需要一个品牌活动落地页，偏年轻、潮流，适合移动端传播。"
+                      type="button"
+                    >填入活动需求</button>
+                    <button
+                      class="tag quick-button"
+                      data-fill-message="我有一批项目，想做成可筛选的作品展示网站（作品集系统）。"
+                      type="button"
+                    >填入作品集需求</button>
                   </div>
-                  <button class="button primary" type="submit" data-magnetic>发送信号</button>
+                  <button class="button primary" type="submit" data-magnetic>发送</button>
                   <div class="submit-note" data-submit-note></div>
                 </form>
               </article>
@@ -82,25 +99,31 @@
               <div class="contact-terminal">
                 <div class="terminal">
                   <p>&gt; channel boot: online</p>
-                  <p>&gt; preferred brief: clear goal + references + launch date</p>
+                  <p>&gt; preferred brief: goal + references + launch date</p>
                   <p>&gt; response mode: visual-first and practical</p>
                 </div>
                 <div class="status-light">channel stable</div>
                 <div class="three-grid">
                   <article class="contact-card">
                     <span class="section-title">Email</span>
-                    <strong>hello@your-domain.com</strong>
-                    <p class="contact-copy">适合正式项目沟通、报价和排期确认。</p>
+                    <div class="copy-row">
+                      <strong>hello@your-domain.com</strong>
+                      <button class="tag" type="button" data-copy-button data-copy-value="hello@your-domain.com">复制</button>
+                    </div>
+                    <p class="contact-copy">适合正式项目沟通、报价与排期确认。</p>
                   </article>
                   <article class="contact-card">
                     <span class="section-title">Social</span>
-                    <strong>@yourhandle</strong>
-                    <p class="contact-copy">可替换成抖音、小红书、Instagram 或 GitHub。</p>
+                    <div class="copy-row">
+                      <strong>@yourhandle</strong>
+                      <button class="tag" type="button" data-copy-button data-copy-value="@yourhandle">复制</button>
+                    </div>
+                    <p class="contact-copy">可替换成抖音/小红书/Instagram/GitHub 等。</p>
                   </article>
                   <article class="contact-card">
                     <span class="section-title">Response</span>
                     <strong>24h - 48h</strong>
-                    <p class="contact-copy">适合补充合作流程、改稿方式和交付节点。</p>
+                    <p class="contact-copy">适合补充合作流程、改稿方式与交付节点。</p>
                   </article>
                 </div>
               </div>

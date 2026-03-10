@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nick | Cyber Profile</title>
+    <title>Nick | 个人主页</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body class="page-home" data-scene="neon">
@@ -19,63 +19,82 @@
       <div class="shell">
         <section class="card">
           <header class="nav">
-            <a class="brand" href="index.html">Neon Identity / 2026</a>
+            <a class="brand" href="index.html">Nick / Personal Signal · 2026</a>
             <nav class="nav-links">
               <a href="index.html" data-nav>Home</a>
-              <a href="about.html" data-nav>About</a>
-              <a href="projects.html" data-nav>Projects</a>
-              <a href="services.html" data-nav>Services</a>
-              <a href="contact.html" data-nav>Contact</a>
+              <a href="about.html" data-nav>Archive</a>
+              <a href="projects.html" data-nav>Work</a>
+              <a href="services.html" data-nav>Build</a>
+              <a href="contact.html" data-nav>Channel</a>
+              <a href="twin.html" data-nav>Twin</a>
             </nav>
           </header>
 
           <section class="hero-grid">
             <div class="panel">
-              <div class="chip">Trending Cyberpunk Profile</div>
+              <div class="chip">你好，我是 Nick</div>
               <h1 class="hero-title">
                 <span class="glitch" data-text="NICK">NICK</span>
               </h1>
               <p class="subtitle">
-                我是一个把设计、代码与视觉叙事混合在一起的创作者。偏爱高冲击的霓虹色、未来感交互和有节奏的动效，用网页做出像短视频封面一样抓眼的第一印象。
+                创意前端 / 交互与动效工程化。擅长把品牌气质翻译成可落地的页面体验，让第一屏就有记忆点。
               </p>
+
               <div class="cta-row">
-                <a class="button primary" href="projects.html" data-magnetic>查看作品矩阵</a>
-                <a class="button" href="contact.html" data-magnetic>发起合作</a>
+                <a class="button primary" href="projects.html" data-magnetic>看精选项目</a>
+                <a class="button" href="contact.html" data-magnetic>联系我</a>
               </div>
 
-              <div class="scene-switcher">
-                <button class="filter-button scene-chip active" data-scene-button="neon" type="button">霓虹模式</button>
-                <button class="filter-button scene-chip" data-scene-button="pulse" type="button">热浪模式</button>
-                <button class="filter-button scene-chip" data-scene-button="ice" type="button">冰蓝模式</button>
+              <div class="scene-switcher" aria-label="Theme">
+                <button class="filter-button scene-chip active" data-scene-button="neon" type="button">霓虹</button>
+                <button class="filter-button scene-chip" data-scene-button="pulse" type="button">脉冲</button>
+                <button class="filter-button scene-chip" data-scene-button="ice" type="button">冰蓝</button>
               </div>
 
               <div class="stats-grid">
                 <div class="kpi-card">
                   <span class="kpi-label">Role</span>
-                  <span class="kpi-value">Creative Developer</span>
+                  <span class="kpi-value">Front-end / Creative Dev</span>
                 </div>
                 <div class="kpi-card">
-                  <span class="kpi-label">Style</span>
-                  <span class="kpi-value">Cyber Neon Motion</span>
+                  <span class="kpi-label">Focus</span>
+                  <span class="kpi-value">Motion, UI System, Landing</span>
                 </div>
                 <div class="kpi-card">
                   <span class="kpi-label">Status</span>
-                  <span class="kpi-value">Open for New Projects</span>
+                  <span class="kpi-value">Available (Remote)</span>
                 </div>
+              </div>
+
+              <div class="contact-strip">
+                <div class="contact-item">
+                  <span class="section-title">Email</span>
+                  <strong class="contact-strong" data-copy="hello@your-domain.com">hello@your-domain.com</strong>
+                </div>
+                <button class="filter-button contact-copy" type="button" data-copy-button data-copy-value="hello@your-domain.com">
+                  复制
+                </button>
               </div>
             </div>
 
             <aside class="panel">
               <div class="portrait">
                 <div class="avatar-ring">
-                  <div class="avatar">NS</div>
+                  <button class="avatar" type="button" aria-label="Toggle identity" data-avatar-toggle>NS</button>
                 </div>
               </div>
-              <div class="terminal">
-                <p>&gt; booting personal-profile.exe</p>
-                <p>&gt; visual mode: douyin cyberpunk aesthetic</p>
-                <p>&gt; motion system: active</p>
-                <p>&gt; user signal: online</p>
+              <div class="terminal" data-home-terminal>
+                <div class="terminal-header">
+                  <span>terminal://home</span>
+                  <span class="terminal-status" data-terminal-status>online</span>
+                </div>
+                <div class="terminal-body" data-typing-root aria-live="polite"></div>
+                <div class="terminal-actions">
+                  <button class="filter-button terminal-btn" type="button" data-daily-signal>生成今日信号</button>
+                  <button class="filter-button terminal-btn" type="button" data-scan>启动扫描</button>
+                  <a class="filter-button terminal-btn" href="twin.html" data-magnetic>打开 Twin</a>
+                </div>
+                <div class="terminal-foot" data-terminal-foot>提示：点头像有彩蛋</div>
               </div>
             </aside>
           </section>
@@ -83,28 +102,27 @@
           <section class="section-block">
             <div class="hero-stage">
               <article class="panel signal-board">
-                <span class="section-title">Signal Mixer</span>
-                <strong>首页增加了可切换氛围模式</strong>
+                <span class="section-title">Now</span>
+                <strong>我正在做的几件事</strong>
                 <p class="body-text">
-                  现在不是单一皮肤，点击不同模式会切换整页的色彩情绪。按钮也做了轻微磁吸跟手感，交互会更活。
+                  把“好看”做成可维护的系统：更快迭代、更一致的动效节奏、更清晰的信息层级。
                 </p>
-                <div class="sound-bar"><span></span></div>
-                <div class="mode-panel">
+                <div class="now-grid">
                   <div class="mode-card">
-                    <strong>Neon</strong>
-                    <span class="small-copy">经典青粉赛博风。</span>
+                    <strong>个人主页重构</strong>
+                    <span class="small-copy">把介绍、项目与联系方式做成一页可读的故事。</span>
                   </div>
                   <div class="mode-card">
-                    <strong>Pulse</strong>
-                    <span class="small-copy">更热烈的橙粉电流感。</span>
+                    <strong>动效组件化</strong>
+                    <span class="small-copy">把常用动效沉淀成可复用的节拍器。</span>
                   </div>
                   <div class="mode-card">
-                    <strong>Ice</strong>
-                    <span class="small-copy">偏冷调的蓝色系统界面。</span>
+                    <strong>交互小实验</strong>
+                    <span class="small-copy">更轻的互动更强的反馈，让页面更活。</span>
                   </div>
                 </div>
               </article>
-              <article class="panel mini-orbit">
+              <article class="panel mini-orbit" aria-hidden="true">
                 <div class="mini-orbit-disc"></div>
               </article>
             </div>
@@ -113,25 +131,33 @@
           <section class="section-block">
             <div class="three-grid">
               <article class="feature-card">
-                <span class="section-title">Visual DNA</span>
-                <strong>动态字体与霓虹 UI</strong>
+                <span class="section-title">精选项目</span>
+                <strong>Landing 页面与作品集系统</strong>
                 <p class="body-text">
-                  主标题使用故障分层、霓虹描边、字距呼吸和灯牌闪烁，维持持续的视觉躁动感。
+                  把氛围做出来只是开始，更关键的是信息结构与转化路径。
                 </p>
+                <a class="tag" href="projects.html" data-magnetic>去 Projects 看更多</a>
               </article>
               <article class="feature-card">
-                <span class="section-title">Background Engine</span>
-                <strong>动态背景系统</strong>
+                <span class="section-title">技能栈</span>
+                <strong>HTML / CSS Motion / JavaScript</strong>
                 <p class="body-text">
-                  扫描线、透视网格、漂浮光球和粒子漂移叠加，形成类似短视频封面的未来城市气氛。
+                  偏爱可维护的 CSS 架构，能把视觉概念拆成可复用的组件与变量系统。
                 </p>
+                <div class="tag-row">
+                  <span class="tag">Layout</span>
+                  <span class="tag">Motion</span>
+                  <span class="tag">UI System</span>
+                  <span class="tag">A11y</span>
+                </div>
               </article>
               <article class="feature-card">
-                <span class="section-title">Site System</span>
-                <strong>完整多页个人站</strong>
+                <span class="section-title">合作方式</span>
+                <strong>小步快跑，节奏清晰</strong>
                 <p class="body-text">
-                  除了首页入口，还补齐了 About、Projects、Services 和 Contact 四类功能页面。
+                  先确定风格关键词与信息层级，再把互动动效按节拍压进页面。
                 </p>
+                <a class="tag" href="services.html" data-magnetic>查看服务</a>
               </article>
             </div>
           </section>
@@ -139,24 +165,25 @@
           <section class="section-block">
             <div class="split-grid">
               <article class="panel">
-                <span class="section-title">Fast Access</span>
+                <span class="section-title">快速入口</span>
                 <div class="tag-row">
-                  <a class="tag" href="about.html" data-magnetic>个人介绍</a>
-                  <a class="tag" href="projects.html" data-magnetic>作品展示</a>
-                  <a class="tag" href="services.html" data-magnetic>服务内容</a>
-                  <a class="tag" href="contact.html" data-magnetic>联系入口</a>
+                  <a class="tag" href="about.html" data-magnetic>关于我</a>
+                  <a class="tag" href="projects.html" data-magnetic>项目</a>
+                  <a class="tag" href="services.html" data-magnetic>服务</a>
+                  <a class="tag" href="contact.html" data-magnetic>联系</a>
+                  <a class="tag" href="twin.html" data-magnetic>AI 分身</a>
                 </div>
               </article>
               <article class="panel">
-                <span class="section-title">Current Mood</span>
+                <span class="section-title">一句话</span>
                 <p class="lead">
-                  “做一个打开就让人记住的主页”，而不是普通简历页。这套站点的核心就是首屏冲击力和连续的未来感氛围。
+                  做一个打开就让人记住的主页，而不是一张普通简历页。
                 </p>
               </article>
             </div>
           </section>
 
-          <p class="footer">CYBER SIGNAL ONLINE // PERSONAL PROFILE LANDING PAGE</p>
+          <p class="footer">PERSONAL PROFILE // SIGNAL ONLINE</p>
         </section>
       </div>
     </main>
